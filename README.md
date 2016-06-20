@@ -187,7 +187,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * [try-catch.js](try-catch.js)
 * Expressions and operators
   * `=` vs `==` vs `===`
-  * Equality and sameness (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+  * [Equality comparisons and sameness][equality] (MDN)
 * [Loops and iteration][loops] (MDN)
   * [loops.js](loops.js)
   * `for`
@@ -343,3 +343,4 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [chai-assert]: http://chaijs.com/api/assert/
 [sprinkles]: https://github.com/avand/sprinkles/blob/master/Gruntfile.js
 [babel]: https://github.com/thejameskyle/babel-handbook/blob/master/translations/en/user-handbook.md
+[equality]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
