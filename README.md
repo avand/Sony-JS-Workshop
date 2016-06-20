@@ -83,7 +83,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * [Arithmetic operators][arithmetic] (MDN)
   * `+`, `-`, `/`, `*`, `++`, `--`
   * Concatenation
-* [Strict mode](strict) (MDN)
+* [Strict mode][strict] (MDN)
   * Eliminates some JavaScript silent errors by changing them to throw errors
   * Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode
   * Applies to entires scripts or individual functions
@@ -161,14 +161,14 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * [static.js](classes/static.js)
   * [Working with objects][objects] (MDN)
   * [Introduction to Object-Oriented JavaScript][oop] (MDN)
-* [Closures](closures) (MDN)
+* [Closures][closures] (MDN)
   * Definition: a function that "remembers" the environment in which it was defined, specifically the variables in context at the time
   * [closures.js](functions/closures.js)
     * Will this code run?
   * Study size maker example on MDN
-  * [Module pattern](module-pattern)
+  * [Module pattern][module-pattern]
     * Emulate private methods
-    * [Immediately-invoked function expressions](iife): `(function() {})()`
+    * [Immediately-invoked function expressions][iife]: `(function() {})()`
     * [module-pattern.js](functions/module-pattern.js)
 * Control flow and error handling
   * `if (condition) { ... }`
