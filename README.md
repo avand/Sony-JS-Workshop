@@ -320,9 +320,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 ## Browserify
 
 * Bundles all files in a Node project into one browser-suitable file
-* npm install -g browserify
-* **Exercise**: Browserify the TreeNode project
-  * Create an HTML file that references that file
+* `npm install -g browserify`
 
 ## Babel
 
