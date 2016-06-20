@@ -1,3 +1,5 @@
+"use strict";
+
 function Song(title, artist, duration) {
   this.title = title;
   this.artist = artist;
