@@ -35,4 +35,5 @@ console.log(user.fullName);
 
 user.fullName = "John Smith"
 
-console.log(user.fullName);
+console.log(user.firstName);
+console.log(user.lastName);
