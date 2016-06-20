@@ -2,6 +2,15 @@
 
 Curriculum for a 3-day JavaScript workshop at General Assembly.
 
+## Table of Contents
+
+1. Orientation, tools, and setting up development environment
+2. The history of JavaScript
+3. The JavaScript language: variables, data types, functions, objects, errors, and more!
+4. Node: installing packages, modules, exports, etc.
+5. Testing with Mocha
+6. Additional tools: Babel, Browserify, Grunt
+
 ## Orientation
 
 * About me
