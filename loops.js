@@ -42,7 +42,7 @@ for (var prop in garage) {
 console.log("---")
 
 for (prop in porsche) {
-  if (garage.hasOwnProperty(prop)) {
+  if (porsche.hasOwnProperty(prop)) {
     console.log(`${prop}: ${porsche[prop]}`);
   }
 }
