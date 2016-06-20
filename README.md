@@ -22,6 +22,16 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * A lot of this stuff is new to me too
 * Helping one another
 
+## Exercises
+
+* Hosting: translating JS you might write to its hoisted equivalent
+* Arrow functions: using an arrow function to avoid pitfalls with `this`
+* Loops: practice using arrays, loops, and conditionals
+* Closures in loops: fix a common mistake caused by closures within loops
+* Movie search: consume a list of movie IDs and output movie titles sorted by release year
+* Say Hey: build a simple Node module that says "hey"
+* TreeNode: write a TreeNode classes that satisfies a number of test cases using Mocha
+
 ## Tools
 
 * Atom (vs. VIM, Sublime)
