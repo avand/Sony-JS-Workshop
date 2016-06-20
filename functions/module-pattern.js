@@ -20,8 +20,7 @@ var AnalyticsModule = (function() {
       return _actionCount;
     }
   }
-
-}());
+})();
 
 AnalyticsModule.logAction("avand", {
   page: "homepage",
