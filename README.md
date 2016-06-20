@@ -27,6 +27,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * Atom (vs. VIM, Sublime)
 * Command line (Terminal)
 * Node
+* GitHub
 
 ## Development Environment
 
