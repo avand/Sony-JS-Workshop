@@ -1,0 +1,15 @@
+{
+  "name": "tree-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree-node.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
