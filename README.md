@@ -171,6 +171,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * [static.js](classes/static.js)
   * [Working with objects][objects] (MDN)
   * [Introduction to Object-Oriented JavaScript][oop] (MDN)
+  * **Exercise**: [car-exercise.js](classes/car-exercise.js)
 * [Closures][closures] (MDN)
   * Definition: a function that "remembers" the environment in which it was defined, specifically the variables in context at the time
   * [closures.js](functions/closures.js)
