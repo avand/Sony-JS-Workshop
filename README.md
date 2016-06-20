@@ -262,6 +262,9 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * [say-hey.js][say-hey.js]
     * Create a module, "sayHey", that exports a method `sayHey`
     * In your console, require that module and execute the function
+* IO
+  * [io-sync.js](io-sync.js)
+  * [io-async.js](io-async.js)
 * Event handling
   * Callbacks take error as first argument (see io_async.js)
   * [emitter.js](emitter.js)
