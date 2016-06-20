@@ -32,6 +32,7 @@ while (junk.length > 0) {
 
 console.log("---")
 
+// for...in
 for (var prop in garage) {
   if (garage.hasOwnProperty(prop)) {
     console.log(`${prop}: ${garage[prop]}`);
