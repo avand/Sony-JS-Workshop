@@ -97,7 +97,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * Anonymous functions
   * [Arrow functions][arrow] (MDN)
     * `(args) => { ... }`
-    * [arrow](functions/arrow.js)
+    * [arrow.js](functions/arrow.js)
     * Parentheses are optional when there's only one parameter
     * Parentheses are required when no params
     * Allows for a more succinct syntax
