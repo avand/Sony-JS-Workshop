@@ -24,7 +24,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 
 ## Exercises
 
-* Hosting: translating JS you might write to its hoisted equivalent
+* Hoisting: translating JS you might write to its hoisted equivalent
 * Arrow functions: using an arrow function to avoid pitfalls with `this`
 * Loops: practice using arrays, loops, and conditionals
 * Closures in loops: fix a common mistake caused by closures within loops
