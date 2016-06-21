@@ -242,6 +242,12 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * Use `Promise.all`
   * [JavaScript Promises: There and back again][promises-html5rocks]
 * Generators
+  * `function*`
+  * Generators are functions which can be exited and later re-entered
+  * Context (variable bindings) will be saved across re-entrances
+  * `yield` pauses the function and hands-off a value to `next()`
+  * The argument to `next()` is treated like a return value of the corresponding `yield`
+  * [generators.js](generators.js)
 
 ## Node
 
