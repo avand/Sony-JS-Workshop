@@ -1,25 +1,24 @@
-var users = []
+function fillArray() {
+  var fns = [];
 
-for(var i = 0; i < 10; i++) {
-  var userID = i;
-
-  var user = {
-    id: userID,
-    save: function() {
-      console.log(`user ${userID} saved`)
-    }
+  for (var i = 0; i < 10; i++) {
+    fns.push(function() {
+      console.log(i);
+    })
   }
 
-  users.push(user)
+  return fns;
 }
 
-users[0].save()
-users[1].save()
-users[2].save()
-users[3].save()
-users[4].save()
-users[5].save()
-users[6].save()
-users[7].save()
-users[8].save()
-users[9].save()
+var fns = fillArray();
+
+fns[0]()
+fns[1]()
+fns[2]()
+fns[3]()
+fns[4]()
+fns[5]()
+fns[6]()
+fns[7]()
+fns[8]()
+fns[9]()
