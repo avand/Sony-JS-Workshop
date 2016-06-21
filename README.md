@@ -269,6 +269,24 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * `--save`  option to add as project dependency
   * `npm ls` (local)
   * `npm ls -g` (global)
+* IO
+  * [io-sync.js](io-sync.js)
+  * [io-async.js](io-async.js)
+  * **Exercise**
+    * Write a script that reads in the contents of [movies.txt](movie-search/movies.txt) and outputs an array of IDs to the console
+    * Then turn that into a promise
+* Building a web server & client
+  * [server.js](server.js)
+  * [client.js](client.js)
+  * [Request: Simplified HTTP Client][request]
+* **Exercise**: Movie search
+  * `JSON.parse()`
+  * `parseInt()`
+  * Implement promises for IO and HTTP operations
+  * Use `Promise.all`
+* Event handling
+  * Callbacks take error as first argument (see io_async.js)
+  * [emitter.js](emitter.js)
 * Modules and exports
   * [Node Modules][node-modules]
   * Files and modules correspond one-to-one
@@ -278,15 +296,6 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * [say-hey.js](say-hey.js)
     * Create a module, "sayHey", that exports a method `sayHey`
     * In your console, require that module and execute the function
-* IO
-  * [io-sync.js](io-sync.js)
-  * [io-async.js](io-async.js)
-* Event handling
-  * Callbacks take error as first argument (see io_async.js)
-  * [emitter.js](emitter.js)
-* Building a web server & client
-  * [server.js](server.js)
-  * [client.js](client.js)
 
 ## Mocha
 
