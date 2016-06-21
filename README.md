@@ -235,11 +235,9 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * Chaining
     * `promise.then(function(val) { return val}).then(...)`
   * `Promise.all([...])`
-  * **Exercise**: Movie search
-    * `JSON.parse()`
-    * `parseInt()`
-    * Implement promises for IO and HTTP operations
-    * Use `Promise.all`
+  * **Exercise**
+    * [promises.js](promises.js)
+    * Wrap the HTTP request in a promise
   * [JavaScript Promises: There and back again][promises-html5rocks]
 * Generators
   * `function*`
