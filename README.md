@@ -26,6 +26,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 
 * Hoisting: translating JS you might write to its hoisted equivalent
 * Arrow functions: using an arrow function to avoid pitfalls with `this`
+* Cars and buses: practice inheritance and object-oriented patterns
 * Loops: practice using arrays, loops, and conditionals
 * Closures in loops: fix a common mistake caused by closures within loops
 * Movie search: consume a list of movie IDs and output movie titles sorted by release year
