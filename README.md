@@ -236,8 +236,10 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * `promise.then(function(val) { return val}).then(...)`
   * `Promise.all([...])`
   * **Exercise**
-    * [promises.js](promises.js)
-    * Wrap the HTTP request in a promise
+    * Command line movie search engine
+    * Implement `get(url)`, `getJSON(url)`, and `getMovies(title)`
+      * All functions should return promises
+    * [search-cmd.js](movie-search/search-cmd.js)
   * [JavaScript Promises: There and back again][promises-html5rocks]
 * Generators
   * `function*`
