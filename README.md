@@ -270,7 +270,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * `exports` is a global object, whatever you put there will be available once the module is required
   * `require(...)`
   * **Exercise**
-    * [say-hey.js][say-hey.js]
+    * [say-hey.js](say-hey.js)
     * Create a module, "sayHey", that exports a method `sayHey`
     * In your console, require that module and execute the function
 * IO
