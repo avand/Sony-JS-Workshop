@@ -367,3 +367,4 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [sprinkles]: https://github.com/avand/sprinkles/blob/master/Gruntfile.js
 [babel]: https://github.com/thejameskyle/babel-handbook/blob/master/translations/en/user-handbook.md
 [equality]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
+[request]: https://github.com/request/request
