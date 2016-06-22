@@ -13,6 +13,10 @@ class TreeNode {
   get isRoot() {
     return !this.parent;
   }
+
+  get root() {
+    return this.parent == null ? this : this.parent.root;
+  }
 }
 
 module.exports = TreeNode;

@@ -57,4 +57,24 @@ describe("TreeNode", function() {
       assert.include(parent.children, child);
     });
   });
+
+  describe("root", function () {
+    it("should return itself if root", function () {
+      var root = new TreeNode();
+      assert.equal(root, root.root);
+    });
+
+    it("should the root of the tree", function () {
+      var greatGrandParent = new TreeNode();
+      var grandParent = new TreeNode();
+      var parent = new TreeNode();
+      var node = new TreeNode();
+
+      greatGrandParent.addChild(grandParent);
+      grandParent.addChild(parent);
+      parent.addChild(node)
+
+      assert.equal(node.root, greatGrandParent);
+    });
+  });
 });

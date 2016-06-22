@@ -314,6 +314,17 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * Ensure that mocha and chai are listed as `devDependencies`
   * [Chai Installation Guide][chai-install]
   * [Chai Assert API][chai-assert]
+    * `var assert = require('chai').assert`
+    * `assert.isNull()`
+    * `assert.isUndefined()`
+    * `assert.equal()`
+    * `assert.isArray()`
+    * `assert.lengthOf()`
+    * `assert.isTrue()`
+    * `assert.isFalse()`
+    * `assert.include()`
+  * How to define getters and setters
+    * `get isRoot() { ... }`
   * Write the following tests
     * A TreeNode has an undefined value by default
     * A TreeNode can be constructed with a value
@@ -323,8 +334,8 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * A TreeNode with a parent should not be considered a root
     * A TreeNode should become the child of a new parent when added
     * A TreeNode should become the parent of a new child when added
-  * Bonus
     * A TreeNode can return the root from any child
+  * Bonus
     * A TreeNode is enumerable, allowing iteration from any child down
     * A TreeNode can be removed, where parent adopts children
 
