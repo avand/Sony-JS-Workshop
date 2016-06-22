@@ -248,6 +248,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * `yield` pauses the function and hands-off a value to `next()`
   * The argument to `next()` is treated like a return value of the corresponding `yield`
   * [generators.js](generators.js)
+  * [THEY CHANGE EVERYTHING][gen-youtube]
 
 ## Node
 
@@ -381,3 +382,4 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [babel]: https://github.com/thejameskyle/babel-handbook/blob/master/translations/en/user-handbook.md
 [equality]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 [request]: https://github.com/request/request
+[gen-youtube]: https://www.youtube.com/watch?v=QO07THdLWQo
