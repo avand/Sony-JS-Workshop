@@ -1,3 +1,5 @@
+"use strict";
+
 var assert = require('chai').assert;
 var TreeNode = require("../tree-node.js");
 
