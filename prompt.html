@@ -1,0 +1,31 @@
+<body>
+<script type="text/javascript">
+  function addParagraph(text) {
+    // create a new html el
+    var el = document.createElement("p");
+    // set the text content
+    el.textContent = text;
+    // add it to the page, within the body
+    document.body.appendChild(el);
+  }
+
+  var promptPromise = new Promise(function(resolve, reject) {
+    var text = prompt("What is your name?");
+    if (text.length > 0) {
+      resolve(text);
+    } else {
+      reject("something went wrong")
+    }
+  })
+
+  function getFirstName(fullName) {
+    return fullName.split(" ")[0];
+  };
+
+  promptPromise.then(getFirstName).then(function(text) {
+    addParagraph(`Hello, ${text}!`);
+  }).then(function() {
+    console.log("done!")
+  }).catch(addParagraph);
+</script>
+</body>
