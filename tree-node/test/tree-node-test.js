@@ -45,18 +45,28 @@ describe("TreeNode", function() {
   });
 
   describe("addChild", function () {
+    var parent, child;
+
+    beforeEach(function() {
+      parent = new TreeNode();
+      child = new TreeNode();
+    });
+
     it("should set the parent of the child", function () {
-      var parent = new TreeNode();
-      var child = new TreeNode();
       parent.addChild(child);
       assert.equal(child.parent, parent);
     });
 
     it("should add the child to the children", function () {
-      var parent = new TreeNode();
-      var child = new TreeNode();
       parent.addChild(child);
       assert.include(parent.children, child);
+    });
+
+    it("should disassociate the child from previous parent", function() {
+      var parent2 = new TreeNode();
+      parent2.addChild(child);
+      parent.addChild(child);
+      assert.notInclude(parent2.children, child);
     });
   });
 

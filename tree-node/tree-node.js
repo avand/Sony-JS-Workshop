@@ -9,6 +9,12 @@ class TreeNode {
 
   addChild(child) {
     this.children.push(child);
+
+    if (child.parent) {
+      var index = child.parent.children.indexOf(child);
+      child.parent.children.splice(index, 1);
+    }
+
     child.parent = this;
   }
 
