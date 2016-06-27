@@ -22,17 +22,6 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * A lot of this stuff is new to me too
 * Helping one another
 
-## Exercises
-
-* Hoisting: translating JS you might write to its hoisted equivalent
-* Arrow functions: using an arrow function to avoid pitfalls with `this`
-* Cars and buses: practice inheritance and object-oriented patterns
-* Loops: practice using arrays, loops, and conditionals
-* Closures in loops: fix a common mistake caused by closures within loops
-* Movie search: consume a list of movie IDs and output movie titles sorted by release year
-* Say Hey: build a simple Node module that says "hey"
-* TreeNode: write a TreeNode classes that satisfies a number of test cases using Mocha
-
 ## Tools
 
 * Atom (vs. VIM, Sublime)
@@ -64,6 +53,11 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 
 ## The Language
 
+* [Strict mode][strict] (MDN)
+  * Eliminates some JavaScript silent errors by changing them to throw errors
+  * Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode
+  * Applies to entires scripts or individual functions
+  * `"use strict";`
 * Comments
   * Line-by-line: `//`
   * Block: `/* */`
@@ -81,30 +75,23 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * Number
     * String
       * Templating: `` `I am ${n} year(s) old` ``
-      * `split()`
-  * Arrays
-    * `length`
-    * `push()`
-    * `pop()`
-    * `map()`
-    * `filter()`
-    * `reduce()`
-    * `sort()`
-    * [Functional programming in Javascript: map, filter and reduce][map-filter-reduce]
+* `console.log()`
+* **Exercise**
+  * Build a simple program with a few variables
+    * One for your name
+    * One for your title
+    * One for the number of years you've worked at Sony
+    * Then output a statement to the console: "Hello, my name is <your name>. I work at Sony as a <your title> and I've been there for <number of years>."
 * [Arithmetic operators][arithmetic] (MDN)
   * `+`, `-`, `/`, `*`, `++`, `--`
   * Concatenation
-* [Strict mode][strict] (MDN)
-  * Eliminates some JavaScript silent errors by changing them to throw errors
-  * Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode
-  * Applies to entires scripts or individual functions
-  * `"use strict";`
 * Functions
   * [functions.js](functions/functions.js)
     * Expressions
     * Declarations
     * Parameters: variable name within function definition
     * Argument: value passed into the function
+    * `return`
   * [default-values.js](functions/default-values.js)
   * Anonymous functions
   * [Arrow functions][arrow] (MDN)
@@ -114,6 +101,32 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * Parentheses are required when no params
     * Allows for a more succinct syntax
     * Preserves the value `this` (more on that later)
+  * **Exercise**
+    * Write a function that will perform Pythagoras' theorem to return the length of the longest side of a right triangle, `c`, given the lengths of the two shorter sides, `a` and `b`
+    * `Math.sqrt()`
+* Arrays
+  * `length`
+  * `push()`
+  * `pop()`
+  * `map()`
+  * `filter()`
+  * `reduce()`
+  * `sort()`
+  * `String#split()`
+  * **Exercise**: [array-exercise.js](array-exercise.js)
+  * [Functional programming in Javascript: map, filter and reduce][map-filter-reduce]
+* [Loops and iteration][loops] (MDN)
+  * `for`
+  * `do...while`
+  * `while`
+  * `break`: terminates the innermost loop
+  * `continue`: goes to the next iteration of the innermost loop
+  * `for...in`
+    * Use `Object#hasOwnProperty` to avoid iterating over inherited properties
+     * When you create an object literal (`{}`), it will always have `Object.prototype` as its prototype.
+     * Since `Object.prototype` is an object like any other object, anyone can define a new property on it, which may (and probably would) be marked enumerable
+     * [Understanding "Prototypes" in JavaScript][prototypes]
+  * **Exercise**: [loops.js](loops.js)
 * Variable scope & hoisting
   * [scope.js](scope.js)
     * Where will this program break?
@@ -182,6 +195,8 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * Emulate private methods
     * [Immediately-invoked function expressions][iife]: `(function() {})()`
     * [module-pattern.js](functions/module-pattern.js)
+  * Closures within loops: [closures-in-loops.js](functions/closures-in-loops.js)
+  * **Exercise**: Fix the bug
 * Control flow and error handling
   * `if (condition) { ... }`
   * `if (condition) { ... } else { ... }`
@@ -197,24 +212,15 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * How can `return` act like `break`?
   * `try...catch`, `throw`, & error objects
     * [try-catch.js](try-catch.js)
+  * **Exercise**: [control-flow-exercise.js](control-flow-exercise.js)
+    * Fix this program to run using a `try...catch` block
+    * Define `ShuttleError` to `extend Error`
+    * Catch the `ShuttleError`
+    * It should output the two existing log statements at the beginning and end and also another "mission rescued" statement
 * Expressions and operators
   * `=` vs `==` vs `===`
   * [Equality comparisons and sameness][equality] (MDN)
-* [Loops and iteration][loops] (MDN)
-  * [loops.js](loops.js)
-  * `for`
-  * `do...while`
-  * `while`
-  * `break`: terminates the innermost loop
-  * `continue`: goes to the next iteration of the innermost loop
-  * `for...in`
-    * Use `Object#hasOwnProperty` to avoid iterating over inherited properties
-     * When you create an object literal (`{}`), it will always have `Object.prototype` as its prototype.
-     * Since `Object.prototype` is an object like any other object, anyone can define a new property on it, which may (and probably would) be marked enumerable
-     * [Understanding "Prototypes" in JavaScript][prototypes]
   * **Exercise**: [loops-exercise.js](loops-exercise.js)
-  * Closures within loops: [closures-in-loops.js](functions/closures-in-loops.js)
-  * **Exercise**: Fix the bug
 * Symbols
   * [symbols.js](symbols.js)
   * `Symbol()` or with label `Symbol("foo")`
@@ -223,6 +229,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * Good to store data on an object without that key being available in `Object.getOwnProperties()`
   * [Metaprogramming in ES6: Symbols and why they're awesome][symbols]
 * Promises
+  * ["Callback hell"][callback-hell]
   * Terminology:
     * Fulfilled: the action relating to the promise succeeded
     * Rejected: the action relating to the promise failed
@@ -240,6 +247,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * Implement `get(url)`, `getJSON(url)`, and `getMovies(title)`
       * All functions should return promises
     * [search-cmd.js](movie-search/search-cmd.js)
+  * **Exercise**: [prompt.html](prompt.html)
   * [JavaScript Promises: There and back again][promises-html5rocks]
 * Generators
   * `function*`
@@ -249,6 +257,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * The argument to `next()` is treated like a return value of the corresponding `yield`
   * [generators.js](generators.js)
   * [THEY CHANGE EVERYTHING][gen-youtube]
+  * [Watt: Powerful control flow using ES6 generators][watt]
 
 ## Node
 
@@ -383,3 +392,5 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [equality]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness
 [request]: https://github.com/request/request
 [gen-youtube]: https://www.youtube.com/watch?v=QO07THdLWQo
+[callback-hell]: http://callbackhell.com
+[watt]: https://github.com/mappum/watt
