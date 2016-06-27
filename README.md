@@ -29,6 +29,11 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * Node
 * GitHub
 
+## References
+
+* [Eloquent JavaScript][eloquent]: A great book to learn JavaScript
+* [Mozilla Developer Network][mdn]: Complete JavaScript reference
+
 ## Development Environment
 
 * Chrome
@@ -83,7 +88,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
     * One for the number of years you've worked at Sony
     * Then output a statement to the console: "Hello, my name is <your name>. I work at Sony as a <your title> and I've been there for <number of years>."
 * [Arithmetic operators][arithmetic] (MDN)
-  * `+`, `-`, `/`, `*`, `++`, `--`
+  * `+`, `-`, `/`, `*`, `%`, `++`, `--`
   * Concatenation
 * Functions
   * [functions.js](functions/functions.js)
@@ -104,7 +109,7 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
   * **Exercise**
     * Write a function that will perform Pythagoras' theorem to return the length of the longest side of a right triangle, `c`, given the lengths of the two shorter sides, `a` and `b`
     * `Math.sqrt()`
-* Arrays
+* [Arrays][arrays]
   * `length`
   * `push()`
   * `pop()`
@@ -394,3 +399,6 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [gen-youtube]: https://www.youtube.com/watch?v=QO07THdLWQo
 [callback-hell]: http://callbackhell.com
 [watt]: https://github.com/mappum/watt
+[arrays]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[eloquent]: http://eloquentjavascript.net
+[mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
