@@ -57,9 +57,3 @@ function getJSON(url, callback) {
     callback(JSON.parse(responseBody));
   })
 }
-
-searchMovies(searchTerm, function(movies) {
-  movies.forEach(function(movie, i) {
-    console.log(`${i + 1}. ${movie["Title"]} (${movie["Year"]})`)
-  })
-})
