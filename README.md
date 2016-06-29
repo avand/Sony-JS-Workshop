@@ -372,6 +372,31 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 * "Source-to-source" compiling (aka transpiling)
 * [Babel User Handbook][babel]
 
+## WebdriverIO
+
+* Install [Java Standard Edition Development Kit][jdk]
+* Download [selenium standalone server][selenium]:
+
+```
+$ curl -O http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
+```
+
+* Install webdriverio package: `npm install webdriverio`
+* Create a config file: `./node_modules/.bin/wdio config`
+* Create a test file: `mkdir -p ./test/specs`
+
+```
+var assert = require('assert');
+
+describe('google', function() {
+    it('should have the right title - the fancy generator way', function () {
+        browser.url('http://webdriver.io');
+        var title = browser.getTitle();
+        assert.equal(title, 'WebdriverIO - Selenium 2.0 javascript bindings for nodejs');
+    });
+});
+```
+
 [symbols]: http://blog.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
 [objects]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
 [oop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
@@ -402,3 +427,5 @@ Curriculum for a 3-day JavaScript workshop at General Assembly.
 [arrays]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [eloquent]: http://eloquentjavascript.net
 [mdn]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+[jdk]: http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+[selenium]:  http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
