@@ -397,6 +397,8 @@ describe('google', function() {
 });
 ```
 
+* Run your tests: `./node_modules/.bin/wdio wdio.conf.js`
+
 [symbols]: http://blog.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
 [objects]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
 [oop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
